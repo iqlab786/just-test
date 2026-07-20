@@ -1,20 +1,3 @@
-FROM zabbix/zabbix-web-nginx-mysql:7.4-alpine-latest
-
-USER root
-
-# Install PHP CLI, SSH tools, Python and pip
-RUN apk add --no-cache \
-    php84-cli \
-    openssh-client \
-    sshpass \
-    python3 \
-    py3-pip
-
-# Install required Python packages
-RUN pip3 install --break-system-packages \
-    netmiko \
-    mysql-connector-python \
-    cryptography
-
-# Switch back to the default user
-USER zabbix
+54cab5fd6483b682506229bb7439d4ad
+Instance ID:
+f714b80638076297757b2b916d149093
